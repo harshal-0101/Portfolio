@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(1, 1, 1);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.App {
+    width: 100%;
+    /* max-width: 1500px; */
+    margin: auto;
+    background: linear-gradient( to bottom right, #3662c030, #000000, #4d1e8041);
+}
+
+
+/* .emty-div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    /* background-color: #4b2380;
+    filter: blur(100px); 
+} */
+
+header {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+}

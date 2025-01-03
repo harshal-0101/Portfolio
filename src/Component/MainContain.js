@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import './allComponet.css';
 import {useTypewriter, Cursor} from "react-simple-typewriter"
+import { Link } from 'react-scroll';
 
 export default function MainContain() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,26 +27,28 @@ export default function MainContain() {
             <div className="nav" >
               <ul>
                 
-                <li><a href=""><i className="fa-solid fa-house"></i> Home</a></li>
-                <li><a href=""><i className="fa-regular fa-address-card"></i> About</a></li>
-                <li><a href=""><i className="fa-solid fa-code"></i> My Work</a></li>
-                <li><a href=""><i className="fa-solid fa-briefcase"></i> Service</a></li>
-                <li><a href=""><i className="fa-solid fa-handshake"></i> Hire Me</a></li>
+                <li> <Link to="main" smooth={true} duration={500}><i className="fa-solid fa-house"></i> Home</Link></li>
+                <li> <Link to="about" smooth={true} duration={500}><i className="fa-regular fa-address-card"></i> About Me</Link></li>
+                <li> <Link to="projects" smooth={true} duration={500}><i className="fa-solid fa-code"></i> My Work</Link></li>
+                <li> <Link to="skills" smooth={true} duration={500}><i class="fa-solid fa-pen-nib"></i> Skills</Link></li>
+                <li><Link to='service'><i className="fa-solid fa-briefcase"></i> Service</Link></li>
+                <li><Link to='Hire'><i className="fa-solid fa-handshake"></i> Hire Me</Link></li>
               </ul>
             </div>
  {/* ---------------slidenav------------------ */}
             <div className="Slide-navbar" >
               <ul className={`sliednav ${isOpen ? 'open' : ''}`} >
                <p>I am Harshal</p>
-                <li><a href=""><i className="fa-solid fa-house"></i> Home</a></li>
-                <li><a href=""><i className="fa-regular fa-address-card"></i> About</a></li>
-                <li><a href=""><i className="fa-solid fa-code"></i> My Work</a></li>
-                <li><a href=""><i className="fa-solid fa-briefcase"></i> Service</a></li>
-                <li><a href=""><i className="fa-solid fa-handshake"></i> Hire Me</a></li>
+               <li> <Link to="main" smooth={true} duration={500}><i className="fa-solid fa-house"></i> Home</Link></li>
+                <li> <Link to="about" smooth={true} duration={500}><i className="fa-regular fa-address-card"></i> About Me</Link></li>
+                <li> <Link to="projects" smooth={true} duration={500}><i className="fa-solid fa-code"></i> My Work</Link></li>
+                <li> <Link to="skills" smooth={true} duration={500}><i class="fa-solid fa-pen-nib"></i> Skills</Link></li>
+                <li><Link to='service'><i className="fa-solid fa-briefcase"></i> Service</Link></li>
+                <li><Link to='Hire'><i className="fa-solid fa-handshake"></i> Hire Me</Link></li>
               </ul>
             </div>
-          </div>
-          <div className="container-2">
+      </div>
+          <div id='main' className="container-2">
             <div className="mainContain">
               <div className="heading">
                 <div className="empty-div2"></div>

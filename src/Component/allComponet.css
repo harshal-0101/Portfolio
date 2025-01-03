@@ -30,7 +30,7 @@
    
    .navbar {
        width: 100%;
-       max-width: 800px;
+       max-width: 1000px;
        margin: auto;
        display: flex;
        justify-content: center;
@@ -41,6 +41,7 @@
    }
    
    .nav {
+       max-width: 900px;
        width: 100%;
        margin-top: 10px;
        background-color: rgba(255, 255, 255, 0.16);
@@ -59,9 +60,10 @@
        list-style: none;
        padding: 10px 20px;
        position: relative;
+       cursor: pointer;
    }
    
-   .nav ul li a {
+   .nav ul li {
        text-decoration: none;
        color: white;
        font-size: 20px;
@@ -272,6 +274,9 @@
        text-align: left;
        font-size: 100px;
        color: white;
+       animation: apper linear;
+       animation-timeline: view();
+       animation-range: entry -50% cover 50%;
    }
    
    .skillsTitle i {
@@ -353,7 +358,7 @@
    .progress-bar {
        width: 70%;
        height: 10px;
-       background-color: #939393;
+       background-color: #ffffff;
        border-radius: 5px;
        overflow: hidden;
    }
@@ -373,6 +378,107 @@
        width: 10%;
        text-align: right;
        font-weight: bold;
+   }
+   /* ------------MY Work -----------    */
+   
+   .Project-container {
+       max-width: 1000px;
+       width: 100%;
+       height: 100vh;
+       color: white;
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       margin: auto;
+   }
+   
+   .my-work {
+       max-width: 1000px;
+       width: 100%;
+       margin: auto;
+   }
+   
+   .MyWorkHading {
+       margin-top: -10 0px;
+       text-align: right;
+       font-size: 100px;
+       color: white;
+       animation: apper linear;
+       animation-timeline: view();
+       animation-range: entry -50% cover 50%;
+   }
+   
+   .MyWorkHading i {
+       /* transform: rotate(deg); */
+       font-weight: bold;
+       background: linear-gradient(to right, rgb(255, 255, 255), rgb(162, 76, 215), rgb(106, 39, 147));
+       -webkit-background-clip: text;
+       color: transparent;
+       background-clip: text;
+   }
+   
+   .Category {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 50px;
+   }
+   
+   .Category button {
+       margin-left: 10px;
+       max-width: 250px;
+       width: 100%;
+       font-size: 20px;
+       background: linear-gradient( to right, #3498db, #4d1a82);
+       color: white;
+       padding: 5px;
+       border-radius: 20px;
+       border: 0;
+       cursor: pointer;
+   }
+   
+   .slider-container {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: relative;
+       width: 100%;
+       max-width: 1000px;
+       margin: 0 auto;
+   }
+   
+   .slider {
+       transition: transform 1s ease-in-out;
+   }
+   
+   .slider img {
+       width: 100%;
+       height: auto;
+       display: block;
+   }
+   
+   .arrow {
+       background-color: rgba(0, 0, 0, 0.5);
+       color: white;
+       border: none;
+       padding: 10px;
+       cursor: pointer;
+       font-size: 24px;
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+   }
+   
+   .left-arrow {
+       left: 10px;
+   }
+   
+   .right-arrow {
+       right: 10px;
+   }
+   
+   .arrow:hover {
+       background-color: rgba(0, 0, 0, 0.8);
    }
    /* -----------media--------- */
    
@@ -477,9 +583,10 @@
            position: relative;
            display: block;
        }
-       .container .title-about {
+       .container .title-about,
+       .skillsTitle,
+       .MyWorkHading {
            font-size: 80px;
-           margin: auto;
        }
        .image {
            /* margin-top: -400px; */
@@ -501,5 +608,11 @@
        }
        .skillsTitle {
            margin-top: 50px;
+       }
+       .slider .empty-div2 {
+           margin-top: -30px;
+           width: 50px;
+           height: 50px;
+           margin-left: 20px;
        }
    }

@@ -615,8 +615,8 @@
        }
        
        .email-form {
-           margin-top: 10px;
-           max-width: 400px;
+           margin-top: 50px;
+           max-width: 500px;
            width: 100%;
            display: flex;
            flex-direction: column;
@@ -626,6 +626,7 @@
        }
        
        .email-form label {
+           /* margin-top: -30px; */
            font-size: 20px;
            color: white;
        }
@@ -882,4 +883,48 @@
        .footer h1 {
            margin-bottom: -10px;
            font-size: 15px;
+       }
+       
+       .success-alert {
+           z-index: 5;
+           position: fixed;
+           top: 20px;
+           right: 20px;
+           background-color: #4CAF50;
+           /* Green background for success */
+           color: white;
+           padding: 15px;
+           border-radius: 5px;
+           font-size: 16px;
+           font-weight: bold;
+           opacity: 0;
+           animation: slideIn 1s forwards, fadeOut 1s 2s forwards;
+           /* Animation properties */
+       }
+       
+       @keyframes slideIn {
+           0% {
+               opacity: 0;
+               transform: translateX(100%);
+           }
+           100% {
+               opacity: 1;
+               transform: translateX(0);
+           }
+       }
+       
+       @keyframes fadeOut {
+           0% {
+               opacity: 1;
+           }
+           100% {
+               opacity: 0;
+           }
+       }
+       
+       .error-message {
+           color: red;
+           font-size: 15px;
+           margin-top: 5px;
+           margin-bottom: -30px;
        }

@@ -46,7 +46,7 @@ export default function Projects() {
 
   return (
     <div>
-      <div id='projects' className="Project-container">
+      <div  className="Project-container">
         <div className="my-work">
           <h1 className='MyWorkHading'>
             <i className="fa-solid fa-arrow-left"></i> My Work

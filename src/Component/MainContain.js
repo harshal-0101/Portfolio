@@ -26,7 +26,6 @@ export default function MainContain() {
               </div>
             <div className="nav" >
               <ul>
-                
                 <li> <Link to="main" smooth={true} duration={500}><i className="fa-solid fa-house"></i> Home</Link></li>
                 <li> <Link to="about" smooth={true} duration={500}><i className="fa-regular fa-address-card"></i> About Me</Link></li>
                 <li> <Link to="projects" smooth={true} duration={500}><i className="fa-solid fa-code"></i> My Work</Link></li>
@@ -48,12 +47,12 @@ export default function MainContain() {
               </ul>
             </div>
       </div>
-          <div id='main' className="container-2">
+          <div  className="container-2">
             <div className="mainContain">
               <div className="heading">
                 <div className="empty-div2"></div>
-                <h1>Hello! WelCome</h1>
-                <h2>to my portfolio</h2>
+                <h1>HELLO! WElCOME</h1>
+                <h2>TO MY PORTFOLIO</h2>
                 <p className='text-anim'>
                  I am <span>{typeEffect}</span>|
                 </p>

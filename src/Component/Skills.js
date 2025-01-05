@@ -55,7 +55,7 @@ export default function Skills() {
 
   return (
     <div>
-      <div id='skills' className="skills-container">
+      <div className="skills-container">
         <h1 className='skillsTitle'>Skills <i className="fa-solid fa-arrow-left"></i></h1>
         <div className="skills-sec">
           <div className="allskills">

@@ -7,7 +7,6 @@ import Projects from './Component/Projects';
 import Ourservice from './Component/Ourservice';
 import Contact from './Component/Contact';
 import AnimatedCursor from "react-animated-cursor"
-
   function App() {
 
 

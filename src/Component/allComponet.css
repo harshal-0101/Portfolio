@@ -51,6 +51,10 @@
            z-index: 1;
        }
        
+       .webhead {
+           display: none;
+       }
+       
        .dropdown {
            display: none;
        }
@@ -685,6 +689,8 @@
            .mainContain {
                text-align: center;
                display: block;
+               max-width: 400px;
+               margin: auto;
            }
            .social-icons {
                max-width: 900px;
@@ -711,40 +717,61 @@
                display: none;
            }
            .dropdown {
-               width: 100%;
+               width: 95%;
                display: block;
-               text-align: right;
                color: white;
+               display: flex;
+               justify-content: space-between;
            }
            .dropdown i {
                font-size: 50px;
                transform: rotate(90deg);
            }
+           .navbar {
+               margin-top: -10px;
+               display: block;
+               position: relative;
+               z-index: 2;
+           }
+           .webhead {
+               display: block;
+               font-size: 20px;
+               background-color: rgba(255, 255, 255, 0.16);
+               padding: 10px;
+               border-radius: 5px;
+           }
+           .webhead span {
+               background-color: red;
+               padding: 2px;
+           }
            .Slide-navbar {
                display: block;
-               width: 100%;
+               width: 90%;
                position: absolute;
                top: 0;
+               background-color: #000000;
            }
            .sliednav.open {
                left: 0;
            }
            .sliednav {
+               margin-top: -5px;
                position: fixed;
                top: 0;
                left: -250px;
                width: 250px;
                height: 100%;
-               background-color: #000000df;
+               background-color: #000000bd;
                transition: 0.3s ease;
-               padding-top: 60px;
-               z-index: 1;
+               /* padding-top: 60px; */
+               z-index: 5;
            }
            .sliednav {
                list-style-type: none;
                padding: 0;
                display: flex;
                flex-direction: column;
+               z-index: 5;
            }
            .sliednav p {
                display: flex;
@@ -760,11 +787,11 @@
            .Slide-navbar .sliednav li {
                padding: 8px 16px;
                margin: 5px;
-               background: linear-gradient(to right, rgb(255, 255, 255), rgba(29, 224, 221, 0.461));
+               background: linear-gradient(to right, rgb(19, 19, 19), rgba(109, 109, 109, 0.461));
                border-radius: 10px;
            }
            .Slide-navbar .sliednav a {
-               color: rgb(0, 0, 0);
+               color: rgb(255, 255, 255);
                text-decoration: none;
                display: block;
            }

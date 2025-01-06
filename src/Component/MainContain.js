@@ -22,6 +22,7 @@ export default function MainContain() {
     <div>
       <div className="navbar">
               <div className="dropdown">
+              <h1 className='webhead'>i'm <span>H</span>arshal</h1>
                  <i onClick={toggleNavbar} className="fa-solid fa-caret-down"></i>
               </div>
             <div className="nav" >

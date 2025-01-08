@@ -36,7 +36,6 @@
        body {
            margin: 0;
            padding: 0;
-           overflow-x: hidden;
            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
        }
        
@@ -215,12 +214,9 @@
        .container .title-about {
            margin-top: -40px;
            text-align: right;
-           font-size: 100px;
            color: white;
-           animation: apper linear;
-           animation-timeline: view();
-           animation-range: entry -50% cover 50%;
            /* transform: translateX(-100px); */
+           font-size: 100px;
        }
        
        .title-about i {
@@ -282,13 +278,15 @@
        }
        /* -------------skill css----------- */
        
-       .skills-container {
+       .skill-container {
+           max-width: 1000px;
            width: 100%;
            height: 100vh;
            color: white;
            display: flex;
            flex-direction: column;
            gap: 20px;
+           justify-self: center;
        }
        
        .skillsTitle {
@@ -296,9 +294,9 @@
            text-align: left;
            font-size: 100px;
            color: white;
-           animation: apper linear;
+           /* animation: apper linear;
            animation-timeline: view();
-           animation-range: entry -50% cover 50%;
+           animation-range: entry -50% cover 50%; */
        }
        
        .skillsTitle i {
@@ -320,6 +318,10 @@
            max-width: 800px;
            width: 100%;
            margin: auto
+       }
+       
+       .skills h2 {
+           display: none;
        }
        
        .skills-1 {
@@ -428,9 +430,9 @@
            text-align: right;
            font-size: 100px;
            color: white;
-           animation: apper linear;
+           /* animation: apper linear;
            animation-timeline: view();
-           animation-range: entry -50% cover 50%;
+           animation-range: entry -50% cover 50%; */
        }
        
        .MyWorkHading i {
@@ -577,9 +579,9 @@
            text-align: left;
            font-size: 100px;
            color: white;
-           animation: apper linear;
+           /* animation: apper linear;
            animation-timeline: view();
-           animation-range: entry -50% cover 50%;
+           animation-range: entry -50% cover 50%; */
        }
        
        .serviceTitle i {
@@ -802,7 +804,7 @@
                height: auto;
            }
            .aboutMe {
-               margin-top: 400px;
+               margin-top: 500px;
                position: relative;
                display: block;
            }
@@ -863,6 +865,13 @@
            .email-form input,
            textarea {
                width: 90%;
+           }
+           .skill-container {
+               margin-top: -200px;
+           }
+           .skill {
+               display: flex;
+               flex-direction: column;
            }
        }
        

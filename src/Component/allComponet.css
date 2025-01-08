@@ -686,7 +686,6 @@
        @media screen and (max-width: 700px) {
            body {
                margin: 5px;
-               overflow-x: hidden;
            }
            .mainContain {
                text-align: center;

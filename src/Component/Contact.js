@@ -13,7 +13,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="footer">
-        <h1>Thank Your for visit</h1>
+        <h1>Thank You for visit</h1>
         <p> 2025 - By Harshal Mahajan </p>
       </div>
     </div>

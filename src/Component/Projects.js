@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import not_project from './img/not-project.png';
 
 export default function Projects() {
   // State to track which button is clicked and the current image index
@@ -8,22 +9,16 @@ export default function Projects() {
   // Images for different categories
   const images = {
     1: [
-      'https://via.placeholder.com/800x400?text=Image+1',
-      'https://via.placeholder.com/800x400?text=Image+2',
-      'https://imgs.search.brave.com/-PXFoEjc4e3-PFfUjoiM5dYo__7bPF8dtv4cEu4VTRs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNS8w/Ny8wNS8xMC8xOC90/cmVlLTgzMjA3OV82/NDAuanBn',
-      'https://via.placeholder.com/800x400?text=Image+4'
+       not_project,
+       not_project
     ],
     2: [
       'https://via.placeholder.com/800x400?text=Image+1',
       'https://via.placeholder.com/800x400?text=Image+2',
-      'https://via.placeholder.com/800x400?text=Image+3',
-      'https://via.placeholder.com/800x400?text=Image+4'
     ],
     3: [
       'https://via.placeholder.com/800x400?text=Image+1',
-      'https://via.placeholder.com/800x400?text=Image+2',
-      'https://imgs.search.brave.com/-PXFoEjc4e3-PFfUjoiM5dYo__7bPF8dtv4cEu4VTRs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNS8w/Ny8wNS8xMC8xOC90/cmVlLTgzMjA3OV82/NDAuanBn',
-      'https://via.placeholder.com/800x400?text=Image+4'
+      'https://via.placeholder.com/800x400?text=Image+2'
     ]
   };
 
@@ -61,7 +56,7 @@ export default function Projects() {
             <button className="arrow left-arrow" onClick={prevSlide}>←</button>
             <div className="slider">
             <div className="empty-div2"></div>
-              <img src={currentImages[currentIndex]} alt={`Slide ${currentIndex}`} />
+              <img className='project-img' src={currentImages[currentIndex]} alt={`Slide ${currentIndex}`} />
             </div>
             <button className="arrow right-arrow" onClick={nextSlide}>→</button>
           </div>

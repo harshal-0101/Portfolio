@@ -64,9 +64,9 @@ export default function MainContain() {
                   <li><a href="https://github.com/harshal-0101"><i className="fa-brands fa-github"></i></a></li>
                   <li><a href="https://www.linkedin.com/in/harshal-n-mahajan/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BJrrBYNAnROiNVIbV7VuUYQ%3D%3D"><i className="fa-brands fa-linkedin"></i></a></li>
                   <li><a href="https://www.instagram.com/its_coder_04/"><i className="fa-brands fa-square-instagram"></i></a></li>
-                  <li><a href="www.youtube.com/@mr_harshal_04"><i className="fa-brands fa-youtube"></i></a></li>
+                  <li><a href="https://www.youtube.com/@mr_harshal_04"><i className="fa-brands fa-youtube"></i></a></li>
                 </ul>
-                </div>    
+                </div>     
               </div>
             </div>
           </div>
